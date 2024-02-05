@@ -1,0 +1,20 @@
+name: Cypress tests
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  cypress-tests-chrome:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository Chrome
+        uses: actions/checkout@v4
+
+      - name: Install Dependensies Chrome
+        uses: npm install
+
+      - name: Run Cypress Tests Chrome
+        uses: npm run cypress:run:chrome
