@@ -13,8 +13,8 @@ jobs:
       - name: Checkout Repository Chrome
         uses: actions/checkout@v4
 
-      - name: Install Dependensies Chrome
-        uses: npm install
+      - name: Install Dependencies Chrome
+        run: npm install
 
       - name: Run Cypress Tests Chrome
-        uses: npm run cypress:run:chrome
+        run: npm run cypress:run:chrome
