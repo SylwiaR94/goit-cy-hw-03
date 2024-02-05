@@ -17,4 +17,8 @@ jobs:
         run: npm install
 
       - name: Run Cypress Tests Chrome
+<<<<<<< HEAD
         run: npm run cypress:run:chrome
+=======
+        run: npm run cypress:run:chrome
+>>>>>>> 672adaced4ce28c432daf5ccfbaac890590dab78
